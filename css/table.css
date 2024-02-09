@@ -1,0 +1,28 @@
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 1px;
+    border: 1px solid #1f2937;
+  }
+  
+  .passed {
+    background-color: green;
+  }
+  
+  .conditional {
+    background-color: goldenrod;
+  }
+  
+  .failed {
+    background-color: red;
+  }
+  

@@ -1,0 +1,39 @@
+
+<nav>
+  <form method="get">
+    <ul class="flex flex-wrap mb-4 border-b border-gray-200">
+      <?php
+      $navItems = [
+        [
+          'text' => 'All Semester',
+          'value' => '',
+        ],
+        [
+          'text' => 'First Semester',
+          'value' => '1',
+        ],
+        [
+          'text' => 'Second Semester',
+          'value' => '2',
+        ],
+      ];
+
+      foreach ($navItems as $item) {
+        $activeClass = '';
+        if (isset($_GET['course']) && $_GET['course'] === $item['value']) {
+          $activeClass = 'bg-gray-200 text-gray-600';
+        } else {
+          $activeClass = 'hover:text-gray-600 hover:bg-gray-200 text-gray-400';
+        }
+        ?>
+        <li class="mr-2">
+          <button type="submit" name="course" value="<?= $item['value'] ?>" class="inline-block px-4 py-4 text-sm font-medium text-center rounded-t-lg focus:outline-none <?= $activeClass ?>">
+            <?= $item['text'] ?>
+          </button>
+        </li>
+        <?php
+      }
+      ?>
+    </ul>
+  </form>
+</nav>

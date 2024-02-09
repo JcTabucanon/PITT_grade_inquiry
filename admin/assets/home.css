@@ -1,0 +1,97 @@
+.heading {
+    position: relative;
+    text-align: center;
+    /* margin-top: 20px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    /* background-color:aqua; */
+    color: white;
+        /* background-color: black; */
+}
+
+.logo-left,
+.logo-right {
+    position: absolute;
+    top: 0;
+    width: 100px !important;
+    /* Adjust the width as needed */
+    height: 100px;
+    /* Adjust the height as needed */
+}
+
+.logo-left {
+    left: 0;
+    margin-left: 100px;
+    margin-top: -20px;
+
+}
+
+.logo-right {
+    right: 0;
+    margin-right: 100px;
+    margin-top: -20px;
+}
+.name{
+    padding: 10px;
+    color: white;
+}
+
+.heading-text {
+    margin-top: 0;
+    /* Adjust the margin-top to make space for the logos */
+}
+
+/* Add your desired styles for the heading text here */
+.heading-text p {
+    /* Example styles */
+    font-size: 16px;
+    margin: 0;
+    line-height: 20px;
+
+}
+
+.h-2 {
+    text-transform: uppercase;
+    margin-top: 10px !important;
+}
+
+.top {
+    width: 100%;
+    height: 150px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-left: 0;
+    margin-top: -20px !important;
+    padding-top: 45px !important;
+}
+
+
+.content-wrapper > .content {
+padding: 0 0.5rem 0 0;
+background-color: #0c1e35;
+
+}
+.pt-3{
+padding: 0;
+}
+.info-box
+{
+background-color: #0b1a2c;
+color: aquamarine;
+border: .1px solid #7d84ab74;
+box-shadow: #0b1a2c;
+}
+.info-box-text{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.info-box-icon
+{
+    background-color: rgba(0, 255, 255, 0.161);
+}
+.card-title , .control-label {
+    color: rgb(216, 246, 246);
+}
+.card{
+    background-color: #0b1a2c !important;
+}

@@ -1,0 +1,480 @@
+.da-thumbs {
+ float: left;
+    list-style: none outside none;
+
+    padding: 0;
+    position: relative;
+    width: 990px;
+}
+.da-thumbs li {
+	float: left;
+	margin: 5px;
+	background: #fff;
+	padding: 3px;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.da-thumbs li a,
+.da-thumbs li a img {
+	display: block;
+	position: relative;
+	
+}
+.da-thumbs li a {
+	overflow: hidden;
+}
+.da-thumbs li a div {
+	position: absolute;
+	background: rgba(75,75,75,0.7);
+	width: 100%;
+	height: 100%;
+}
+.da-thumbs li a div.da-animate {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+/* Initial state classes: */
+.da-slideFromTop {
+	left: 0px;
+	top: -100%;
+}
+.da-slideFromBottom {
+	left: 0px;
+	top: 100%;
+}
+.da-slideFromLeft {
+	top: 0px; 
+	left: -100%;
+}
+.da-slideFromRight {
+	top: 0px;
+	left: 100%;
+}
+/* Final state classes: */
+.da-slideTop {
+	top: 0px;
+}
+.da-slideLeft {
+	left: 0px;
+}
+.da-thumbs li a div span {
+	display: block;
+	padding: 10px 0;
+	margin: 40px 20px 20px 20px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+}
+ /* Change the scrollbar style */
+ ::-webkit-scrollbar {
+    width: 5px;
+    background-color: #05031c;
+  }
+  
+  /* Change the thumb style */
+  ::-webkit-scrollbar-thumb {
+    background-color: #ecd60d;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  /* Change the scrollbar on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #e6c312;
+    cursor: pointer;
+  }
+  nav{
+	position: fixed;
+}
+  .header{
+	background-size: cover;
+	border-radius: 10px;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	display: flex;
+	flex-direction: column; /* add this to stack the elements vertically */
+  }
+  
+  .pitlogo{
+	margin-bottom: 10px;
+	margin-top: -50%;
+	height: 10rem;
+	display: flex;
+	position: relative;
+	z-index: 2; /* add this to bring the logo above the text */
+  }
+  
+  .pitlog {
+	color: #fff;
+	background-color: rgba(12, 12, 12, 0);
+	backdrop-filter: blur(5px);
+	display: flex;
+	position: relative;
+	z-index: 1; /* add this to push the text behind the logo */
+  }
+  
+  .pittext h1 {
+	font-size: 300%;
+  }
+
+
+
+  
+  .header1{
+	border-radius: 10px;
+	align-items: center;
+	width: 500px;
+	background-color: #6058584a;
+	padding: 10px;
+	height: 250px;
+	margin-top: 220px;
+	
+}
+
+  .pittext{
+	background-color: #161b22;
+	padding: 20px;
+	border-radius: 10px;
+	height: 275px;
+	width: 500px;
+
+	
+  }
+
+  .pitlogo1{
+	height: 5rem;
+	margin-right: 20px;
+	display: flex;
+	position: relative;
+	z-index: 3; /* add this to bring the logo above the text */
+  }
+  
+  .pitlog1 {
+	color: #fff;
+	background-color: rgba(12, 12, 12, 0);
+	backdrop-filter: blur(5px);
+	display: flex;
+	position: relative;
+	z-index: 1; /* add this to push the text behind the logo */
+  }
+  
+  
+  .pittext h1 {
+	font-size: clamp(30px, 1.4vw, 30px);
+	line-height: 1;
+	color: #fbfffc;
+  }
+  .pittext p {
+		font-size: clamp(13px, 1.4vw, 15px);
+	
+  }
+  .pittext h2 {
+	font-size:200%;
+	line-height: 1;
+	margin-left: 20px;
+  }
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+  .hero {
+	display: grid;
+	background-color: #27292f00;
+	grid-template-columns: 80px 1fr 1fr;
+	height: 85vh;
+  }
+  
+  .hero_content {
+	line-height: 1;
+	height: 100;
+	max-width: 100vw;
+	grid-column: 2/5;
+	display: flex;
+	gap: 1px;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	z-index: 1; /* add this to push the text behind the logo */
+	background-color: #d04dfc00;
+	margin-top: 100px;
+  }
+ 
+  @media only screen and (max-width: 768px) {
+	nav{
+		position: fixed;
+	}
+	.hero {
+		
+	  grid-template-columns: 80px 1fr 1fr;
+	  height:100vh!important;
+	  background-color: #e6c312;
+
+	}
+	
+	.svg-container{
+		height: 90vh;
+		width: 100vw;
+		/* left: 0; 
+		top: 0; 
+		bottom: 0;
+		right: 0; */
+	}
+	.svg-con{
+		width: inherit;
+		height: 100%;
+		position: relative;
+		display: flex;
+		justify-content: right;
+		align-items: end;
+
+	}
+	.svg-container svg {
+		position: absolute;
+		height: 500px;
+		width: fit-content;
+
+
+	}
+	.header1{
+	
+		border-radius: 10px;
+		align-items: center;
+		justify-content: center;
+		width: 350px;
+		display: flex; 
+		background-color: #b5b5b5bd !important;
+		height: 180px;
+		align-items:baseline;
+
+		
+	}
+	
+	  .pittext{
+		position: relative;
+		background-color: #0e042b;
+		border-radius: 20px 0 20px 20px;
+		height: 200px;
+
+	  }
+  .pittext p{
+	line-height: 1.2; 
+	text-align: justify;
+	word-spacing: 10;
+  }
+
+	.hero_content {
+	  position: absolute;
+	  gap: 1px;
+	  width: 80vw;
+	  margin-top: -50px;
+	  background-color: rgba(95, 16, 174, 0) ;
+	}
+	
+	 .hero_content h1 {
+		color: rgb(255, 255, 255) !important;
+		font-family: 'Inter', sans-serif;
+		font-size: clamp(20px, 5vw, 30px) !important;
+		display: none;
+		line-height: 1;
+	  }
+	  .hero_content h2 {
+		font-family: 'Inter', sans-serif;
+		font-size: clamp(3px, 5vw, 10px) !important;
+		margin-top: 1px;
+		display: none;
+	  }
+	
+	  
+	  .p1 {
+		color: rgba(255, 255, 255,.5);
+		font-family: sans-serif !important;
+		font-size: clamp(13px, 1.4vw, 13px) !important;
+		font-weight: 300;
+		line-height: 1; 
+		margin-top: -10px;
+		display: none;
+	  }
+	  .learn {
+		font-family: 'Inter', sans-serif;
+		line-height: 1;
+		margin-top: -10px;
+		
+	  }
+	
+  }
+
+
+ .hero_content h1 {
+	color: white;
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(32px, 5vw, 50px);
+	line-height: 1;
+  }
+
+  
+  .p1 {
+	color: rgba(255, 255, 255,.5);
+	font-family: sans-serif;
+	font-size: clamp(13px, 1.4vw, 24px);
+	font-weight: 300;
+	line-height: 1; 
+	margin-top: -10px;
+
+  }
+  .learn {
+	/* color: white; */
+	font-family: 'Inter', sans-serif;
+	font-size: clamp(10px, 5vw, 32px);
+	line-height: 1;
+	margin-top: -10px;
+	
+  }
+  svg {
+	grid-column: 1/4;
+
+
+  }
+  
+  .button {
+	align-self: flex-start;
+	width: 400px;
+	height: 80px;
+	color: goldenrod;
+	border: none;
+	border-radius: 6px; 
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+  }
+  
+ .button:hover {
+	box-shadow: 0px 10px 20px rgba(0,0,0,.3);
+	cursor: pointer;
+	text-decoration: none;
+	padding: 10px;
+  }
+  
+
+  
+@keyframes sf-fly-by-1 {
+    from {
+        transform: translateZ(-600px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateZ(0);
+        opacity: 0.5;
+    }
+}
+@keyframes sf-fly-by-2 {
+    from {
+        transform: translateZ(-1200px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateZ(-600px);
+        opacity: 0.5;
+    }
+}
+@keyframes sf-fly-by-3 {
+    from {
+        transform: translateZ(-1800px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateZ(-1200px);
+        opacity: 0.5;
+    }
+}
+.star-field {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    perspective: 600px;
+    -webkit-perspective: 600px;
+    z-index: -1;
+}
+.star-field .layer {
+    box-shadow: -411px -476px #cccccc, 777px -407px #d4d4d4, -387px -477px #fcfcfc, -91px -235px #d4d4d4, 491px -460px #f7f7f7, 892px -128px #f7f7f7, 758px -277px #ededed, 596px 378px #cccccc, 647px 423px whitesmoke, 183px 389px #c7c7c7,
+        524px -237px #f0f0f0, 679px -535px #e3e3e3, 158px 399px #ededed, 157px 249px #ededed, 81px -450px #ebebeb, 719px -360px #c2c2c2, -499px 473px #e8e8e8, -158px -349px #d4d4d4, 870px -134px #cfcfcf, 446px 404px #c2c2c2,
+        440px 490px #d4d4d4, 414px 507px #e6e6e6, -12px 246px #fcfcfc, -384px 369px #e3e3e3, 641px -413px #fcfcfc, 822px 516px #dbdbdb, 449px 132px #c2c2c2, 727px 146px #f7f7f7, -315px -488px #e6e6e6, 952px -70px #e3e3e3,
+        -869px -29px #dbdbdb, 502px 80px #dedede, 764px 342px #e0e0e0, -150px -380px #dbdbdb, 654px -426px #e3e3e3, -325px -263px #c2c2c2, 755px -447px #c7c7c7, 729px -177px #c2c2c2, -682px -391px #e6e6e6, 554px -176px #ededed,
+        -85px -428px #d9d9d9, 714px 55px #e8e8e8, 359px -285px #cfcfcf, -362px -508px #dedede, 468px -265px #fcfcfc, 74px -500px #c7c7c7, -514px 383px #dbdbdb, 730px -92px #cfcfcf, -112px 287px #c9c9c9, -853px 79px #d6d6d6,
+        828px 475px #d6d6d6, -681px 13px #fafafa, -176px 209px #f0f0f0, 758px 457px #fafafa, -383px -454px #ededed, 813px 179px #d1d1d1, 608px 98px whitesmoke, -860px -65px #c4c4c4, -572px 272px #f7f7f7, 459px 533px #fcfcfc,
+        624px -481px #e6e6e6, 790px 477px #dedede, 731px -403px #ededed, 70px -534px #cccccc, -23px 510px #cfcfcf, -652px -237px whitesmoke, -690px 367px #d1d1d1, 810px 536px #d1d1d1, 774px 293px #c9c9c9, -362px 97px #c2c2c2,
+        563px 47px #dedede, 313px 475px #e0e0e0, 839px -491px #e3e3e3, -217px 377px #d4d4d4, -581px 239px #c2c2c2, -857px 72px #cccccc, -23px 340px #dedede, -837px 246px white, 170px -502px #cfcfcf, 822px -443px #e0e0e0, 795px 497px #e0e0e0,
+        -814px -337px #cfcfcf, 206px -339px #f2f2f2, -779px 108px #e6e6e6, 808px 2px #d4d4d4, 665px 41px #d4d4d4, -564px 64px #cccccc, -380px 74px #cfcfcf, -369px -60px #f7f7f7, 47px -495px #e3e3e3, -383px 368px #f7f7f7, 419px 288px #d1d1d1,
+        -598px -50px #c2c2c2, -833px 187px #c4c4c4, 378px 325px whitesmoke, -703px 375px #d6d6d6, 392px 520px #d9d9d9, -492px -60px #c4c4c4, 759px 288px #ebebeb, 98px -412px #c4c4c4, -911px -277px #c9c9c9;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 4px;
+    width: 4px;
+    border-radius: 2px;
+}
+.star-field .layer:nth-child(1) {
+    animation: sf-fly-by-1 5s linear infinite;
+}
+.star-field .layer:nth-child(2) {
+    animation: sf-fly-by-2 5s linear infinite;
+}
+.star-field .layer:nth-child(3) {
+    animation: sf-fly-by-3 5s linear infinite;
+}
+
+
+
+
+.hero {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-size: cover;
+   
+}
+
+canvas {
+    display: block;
+}
+
+#canvas_container {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.svg-container{
+	height: 90vh;
+	width: 100vw;
+	left: 0; 
+	top: 0; 
+	bottom: 0;
+	right: 0;
+}
+.svg-con{
+	width: inherit;
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: right;
+	align-items: end;
+
+}
+  .svg-container svg {
+	position: absolute;
+	height: 500px;
+	width: fit-content;
+
+
+  }

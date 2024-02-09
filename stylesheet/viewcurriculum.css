@@ -1,0 +1,247 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.active_btn svg,
+.active_btn p {
+  color: #0d1117 !important;
+}
+/* .grade svg,
+.grade-act svg,
+.grade p {
+  color: #17a2b8 !important;
+} */
+
+body{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+
+} 
+.wrapper{
+  height: auto;
+  width: auto;
+  display: flex;
+  margin-left: 230px;
+  min-height: 100%;
+  background-color: #080f25;
+  padding: 10px;
+}
+.margin_wrapper{
+  width: 100%;
+  min-height: 80%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.container{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.c-con{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+}
+.btn-container{
+  width: auto;
+  height: auto;
+  display: flex;
+  padding: 7px;
+  background-color: #e7e6e6;
+  border-radius: 5px;
+
+}
+.btn-wrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.btn-wrapper a{
+  text-decoration: none;
+}
+.view,
+.delete{
+  height: 30px;
+  width: fit-content;
+  font-family: roboto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff;
+  background-color: darkcyan;
+  border: 1px solid darkcyan;
+  padding: 5px;
+  letter-spacing: .5px;
+  outline: none;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.view{
+  margin-right: 20px;
+}
+.view > svg,
+.delete > svg{
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+  color: #ffffff;
+}
+
+
+
+
+.heading{
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  font-family: roboto;
+  color: white;
+  display: flex;
+  font-size: 17px;
+}
+.heading-text{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #133d25;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.heading-text > p{
+  padding: 5px;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+.h-1{
+  font-size: 14px;
+  font-weight: 500;
+}
+.h-2{
+  font-weight: 500;
+  font-size: 12px !important;
+}
+.course-t{
+  font-size: 12px;
+  font-weight: 500;
+}
+.effective-t{
+  font-style: italic;
+  font-weight: 500;
+  font-size: 10px !important;
+}
+
+
+.btn-con, a{
+  text-decoration: none;
+}  
+
+
+
+
+
+.table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+th{
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  background-color: #18202b;
+  height: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: .5px;
+  border: 1px solid #18202b !important;
+
+}
+td{
+  height: 30px;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color:#dce8f6;
+  border: none !important;
+  border: 1px solid #18202b !important;
+  padding: 5px;
+}   
+table tbody tr:hover{
+  background-color: #101935 !important;
+  cursor: pointer;
+}
+.btn-con{
+  padding: 0;
+}
+.btn-con > a{
+  padding: 7px;
+  background-color: #17a2b8;
+  border-radius: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+.tr-YLVL{
+  background-color: #4a4e53 !important;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.tr-YLVL:hover{
+  background-color: #4a4e53 !important;
+}
+.tr-SEM{
+  font-weight: bold;
+  background-color: #4f4a3f !important;
+  border-color: #f8ecd2 !important;
+  letter-spacing: .5px;
+}
+.tr-SEM:hover{
+  background-color: #4f4a3f !important;
+}
+
+
+.td-SUBTOTAL,
+.td-UNITS{
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+}
+.td-U{
+  font-weight: bold;
+}
+.td-left{
+  text-align: left;
+  padding-left: 15px;
+}
+
+.tr-OVER_ALL_UNITS{
+  font-weight: bold;
+  background-color: #686357 !important;
+  height: 30px !important;
+  letter-spacing: .5px;
+}
+.tr-OVER_ALL_UNITS:hover{
+  background-color: #686357 !important;
+}
+.td-OVER_ALL_UNITS{
+  text-align: right;
+  padding-right: 10px;
+}

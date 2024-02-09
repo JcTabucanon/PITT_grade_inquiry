@@ -1,0 +1,61 @@
+
+.mother{
+    height: 100vh;
+    background: #055cd600;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+.welcome-container {
+	background:rgba(255, 0, 0, 0);
+
+
+}
+svg{
+    height: 100%;
+}
+.container{
+	
+	background:rgba(255, 255, 0, 0);
+}
+.student{
+   
+	background-color: rgba(0, 255, 255, 0);
+}
+.welcome-message {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.name {
+  color: #7f9cf5;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.link {
+  background-color: #edf2f7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.link:hover {
+  background-color: #060718;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #e7a602;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}

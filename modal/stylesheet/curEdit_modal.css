@@ -1,0 +1,47 @@
+/* The Modal (background) */
+.editModal {
+     display: none; /* Hidden by default */
+     position: fixed; /* Stay in place */
+     z-index: 1; /* Sit on top */
+     left: 0;
+     top: 0;
+     width: 100vw;
+     height: 100vh;
+     overflow: auto; /* Enable scroll if needed */
+     background-color: rgba(0,0,0,0.4);
+      /* Black w/ opacity */
+     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      font-weight: 600;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+    
+   /* Modal Content/Box */
+   .modal-content {
+    height: auto;
+    width: 750px;
+    background-color: #111827;
+    border-radius: 7px;
+    padding: 20px;
+
+   }
+
+   /* The Close Button */
+   .close {
+   color: #888;
+   float: right;
+   font-size: 30px;
+   font-weight: bold;
+   transition: 5s ease-in-out;
+   margin-right: 5px;
+   }
+   
+   .close:hover,
+   .close:focus {
+     color: black;
+     text-decoration: none;
+     cursor: pointer;
+   }
+    

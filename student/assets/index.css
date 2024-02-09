@@ -1,0 +1,36 @@
+
+  
+  #webgl {
+    width: 90vw;
+    height: 50vh;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  #webgl2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 2;
+
+  }
+  
+  #bg-box {
+    width: 90vw;
+    height: 50vh;
+    position: absolute;
+    z-index: -1;
+    
+  }
+  
+  .svg-box {
+    width:90vw;
+    height: 50vh;
+    position: absolute;
+    z-index: 1;
+
+  }
+  .svg-box #robot {
+    cursor: pointer;
+  }

@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    /* background: #ddd; */
+    perspective: 2000px;
+    perspective-origin: 50% 50%;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+.animated-gallery {
+    position: relative;
+    margin: 15px auto;
+    width: calc(100% - 30px);
+    max-width: 90vw;
+    background: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 0 0 0.2em 0.2em;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.animated-gallery h2 {
+    font-weight: 300;
+}
+
+.animated-gallery .img-wrap {
+    display: inline-block;
+    margin: 3px;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes spin {
+    50% {
+        -webkit-transform: translate3d(-50%, -50%, 0) rotate(180deg);
+        transform: translate3d(-50%, -50%, 0) rotate(180deg);
+    }
+}
+
+.animated-gallery .img-wrap:before,
+.animated-gallery .img-wrap:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 36px;
+    width: 36px;
+    border-radius: 100%;
+    border: 3px solid transparent;
+    -webkit-transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    opacity: 0;
+}
+
+.animated-gallery .img-wrap:before {
+    border-left-color: rgba(0, 204, 136, 0.5);
+    border-right-color: rgba(0, 204, 136, 0.5);
+    animation: spin 2s ease-in-out 0.25s infinite;
+}
+
+.animated-gallery .img-wrap:after {
+    border-top-color: rgba(0, 204, 136, 0.65);
+    border-bottom-color: rgba(0, 204, 136, 0.65);
+    animation: spin 3s ease-in-out 0s infinite;
+}
+
+.animated-gallery .img-wrap:not(.loaded):before,
+.animated-gallery .img-wrap:not(.loaded):after {
+    opacity: 1;
+}
+
+.animated-gallery img {
+    position: relative;
+    float: left;
+    opacity: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    -webkit-transform: translate(25%, 25%) scale(0.5) rotateX(20deg);
+    transform: translate(25%, 25%) scale(0.5) rotateX(20deg);
+    transform-origin: 0% 0% 0px;
+    transition: transform 0.3s, opacity 0.3s;
+    will-change: transform, opacity;
+}
+
+.animated-gallery .loaded img.active {
+    opacity: 1;
+    -webkit-transform: translate(0, 0) scale(1) rotateX(0deg);
+    transform: translate(0, 0) scale(1) rotateX(0deg);
+}
