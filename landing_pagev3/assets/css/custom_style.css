@@ -1,0 +1,157 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .active>.nav-link, .navbar .navbar-nav .nav-link.current, .navbar .navbar-nav .nav-link.show, .navbar .navbar-nav .show>.nav-link {
+    color: var(--warning);
+    border-bottom: 1px solid var(--warning);
+}
+
+.Modern-Slider .item h6 {
+    color: var(--warning) !important;
+}
+
+.usa-logo {
+    /* width: 5rem; */
+    width: 12rem;
+}
+
+.background-header .navbar-brand {
+    margin: 0 !important;
+}
+.background-header .navbar-brand .usa-logo {
+    /* width: 3rem !important; */
+    width: 7rem !important;
+}
+
+.request-form .contact-us {
+	background-color: var(--warning);
+	color: var(--gray-dark);
+	border: 2px solid var(--warning);
+}
+
+.coreValueBtn {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 28px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    background-color: var(--warning);
+	color: var(--gray-dark);
+	border: 2px solid var(--warning);
+}
+
+.main-banner .sign-in-btn:hover, .request-form .contact-us:hover, .coreValueBtn:hover, .gakkouSignIn:hover {
+    background-color: #FFDE00;
+    border-color: #FFDE00;
+    color: var(--gray-dark);
+}
+
+.custom-img-icons {
+    max-width: 5rem;
+}
+
+footer h4 {
+    color: #fff;
+    font-size: 1.6rem !important;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    margin-bottom: 35px;
+}
+
+.show .signInItem {
+    margin-bottom: .5rem!important;
+    margin-top: .5rem!important;
+}
+
+.gakkouSignIn {
+    border-radius: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: 600;
+}
+
+.customCardLink, .gakkouModule {
+    transition: transform 500ms ease;
+    cursor: pointer;
+}
+
+.hero-mobile-logo {
+    min-width: 1rem !important;
+    max-width: 18rem !important;
+    margin-bottom: 3rem;
+}
+
+@media (min-width:992px) {
+    .modal-xl{ max-width:1140px }
+    .hero-mobile-logo { display: none !important; }
+}
+
+@media (max-width:991px) {
+    .hero-mobile-logo { display: block !important; }
+
+    /* header { background-color: #fff !important; } */
+}
+
+@media screen and (min-width: 48rem) {
+    .customCardLink:hover  { transform: translate(0px, -10px); }
+
+    .gakkouModule:hover {
+        overflow: hidden;
+        transform: translatey(0px);
+        -webkit-animation: float 3s ease-in-out infinite;
+                animation: float 3s ease-in-out infinite;
+    }
+}
+
+
+/* floating animation */
+@-webkit-keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+}
+  
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+}
+
+.modal {
+    z-index: 999950;
+}
+
+.modal-backdrop {
+    z-index: 999940 !important;
+}
+
+.modal-content {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border: 0;
+}
+
+.modulePreview {
+    width: 100%;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
