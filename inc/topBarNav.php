@@ -1,57 +1,49 @@
-<link rel="stylesheet" href="asset/css/styles.css">
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container px-4 px-lg-5">
-        <button class="navbar-toggler btn btn-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/school_logos/logomaster_white.png" class="img-fluid d-none d-lg-block usa-logo"
+                alt="Logo" style="width: 200px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="./">
-            <img src="PITT/pitlogo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Home</a></li>
-                <!-- <li class="nav-item"><a class="nav-link text-white" href="./?p=blogs">BLOGS</a></li> -->
-                <li class="nav-item"><a class="nav-link text-white" href="./?p=courses">Programs</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="./?p=about">About</a></li>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#homeSection">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#vmgo" id="admissionLink">VMGO's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutSection">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="views/signup.php" id="admissionLink">SIgn up</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="views/login_form.php" class="btn btn-warning" type="button" >Login</a>
+                </li>
             </ul>
-        </div>
-        
-        <div class="mobile-links">
-            <a href="views/login_form.php" class="text-decoration-none text-white">
-               Log in
-            </a>
-            <span class="line-l"></span>
-            <a href="views/signup.php" class="text-decoration-none text-white">
-               Sign up
-            </a>
         </div>
     </div>
 </nav>
 
 <style>
-    .navbar
-    {
-        background-color: #050510 !important;
+    body {
+      padding-top: 80px; /* Adjust this value based on the height of your fixed navbar */
     }
-    .line-l
-        {
-            border: 1px solid cyan;
-            margin: 40px;
-            height: 20px;
-            margin-top:-1px;
 
-        }
-    @media (max-width: 767px)
-    
-    {
-       
-        .line-l
-        {
-            border: 1px solid cyan;
-            margin: 40px;
-            height: 20px;
-            margin-top:-1px;
-        }
+    .navbar {
+      background-color: transparent; /* Set initial background color */
+      transition: background-color 0.3s;
+      height: 80px !important;
     }
-</style>
+
+    .navbar.fixed-top {
+        background-color: #001a2c!important;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+    }
+  </style>
+  
